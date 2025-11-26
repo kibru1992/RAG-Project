@@ -90,7 +90,7 @@ Please provide a comprehensive and accurate answer based on the context above:
         Initialize the LLM by checking for available API keys.
         Tries OpenAI, Groq, and Google Gemini in that order.
         """
-        # Check for OpenAI API key
+        # Check for GROQ API KEY
         if os.getenv("GROQ_API_KEY"):
             model_name = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
             print(f"Using Groq model: {model_name}")
